@@ -11,3 +11,12 @@ type LoginRequest struct {
 	Name     string `json:"name"`
 	Password string `json:"password"`
 }
+
+type UserDetailReply struct {
+	Name  string `json:"name"`
+	Email string `json:"email"`
+}
+
+type UserDetailRequest struct {
+	Identity string `json:"identity"`
+}
