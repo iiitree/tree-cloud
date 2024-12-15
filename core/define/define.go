@@ -10,3 +10,4 @@ type UserClain struct {
 }
 
 var JwtKey = "tree-cloud-key"
+var EmailPassword = "xxx"

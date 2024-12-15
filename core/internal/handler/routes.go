@@ -15,6 +15,11 @@ func RegisterHandlers(server *rest.Server, serverCtx *svc.ServiceContext) {
 	server.AddRoutes(
 		[]rest.Route{
 			{
+				Method:  http.MethodPost,
+				Path:    "/mail/code/send",
+				Handler: MailCodeSendHandler(serverCtx),
+			},
+			{
 				Method:  http.MethodGet,
 				Path:    "/user/detail",
 				Handler: UserDetailHandler(serverCtx),
